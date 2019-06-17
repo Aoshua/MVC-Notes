@@ -28,3 +28,8 @@ C:\Users\Josh Abbott\source\repos\Tutorials\VehicleMvcDemo\obj\Debug\netcoreapp2
 C:\Users\Josh Abbott\source\repos\Tutorials\VehicleMvcDemo\obj\Debug\netcoreapp2.2\VehicleMvcDemo.dll
 C:\Users\Josh Abbott\source\repos\Tutorials\VehicleMvcDemo\obj\Debug\netcoreapp2.2\VehicleMvcDemo.pdb
 C:\Users\Josh Abbott\source\repos\Tutorials\VehicleMvcDemo\obj\Debug\netcoreapp2.2\VehicleMvcDemo.csproj.CopyComplete
+C:\Users\Josh Abbott\source\repos\Tutorials\VehicleMvcDemo\obj\Debug\netcoreapp2.2\Razor\Views\Vehicles\Create.g.cshtml.cs
+C:\Users\Josh Abbott\source\repos\Tutorials\VehicleMvcDemo\obj\Debug\netcoreapp2.2\Razor\Views\Vehicles\Delete.g.cshtml.cs
+C:\Users\Josh Abbott\source\repos\Tutorials\VehicleMvcDemo\obj\Debug\netcoreapp2.2\Razor\Views\Vehicles\Details.g.cshtml.cs
+C:\Users\Josh Abbott\source\repos\Tutorials\VehicleMvcDemo\obj\Debug\netcoreapp2.2\Razor\Views\Vehicles\Edit.g.cshtml.cs
+C:\Users\Josh Abbott\source\repos\Tutorials\VehicleMvcDemo\obj\Debug\netcoreapp2.2\Razor\Views\Vehicles\Index.g.cshtml.cs
