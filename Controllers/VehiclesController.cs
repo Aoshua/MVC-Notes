@@ -19,9 +19,36 @@ namespace VehicleMvcDemo.Controllers
         }
 
         // GET: Vehicles
-        public async Task<IActionResult> Index()
+        /*public async Task<IActionResult> Index()
         {
             return View(await _context.Vehicle.ToListAsync());
+        }*/
+
+        public async Task<IActionResult> Index(string vehicleMake, string searchString)
+        {
+            IQueryable<string> makeQuery = from m in _context.Vehicle
+                                           orderby m.VehicleMake
+                                           select m.VehicleMake;
+            var vehicles = from m in _context.Vehicle
+                           select m;
+
+            if(!string.IsNullOrEmpty(searchString))
+            {
+                vehicles = vehicles.Where(s => s.VehicleModel.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(vehicleMake))
+            {
+                vehicles = vehicles.Where(m => m.VehicleMake == vehicleMake);
+            }
+
+            var vehicleMakeVM = new VehicleMakeViewModel
+            {
+                Makes = new SelectList(await makeQuery.Distinct().ToArrayAsync()),
+                Vehicles = await vehicles.ToListAsync()
+            };
+
+            return View(vehicleMakeVM);
         }
 
         // GET: Vehicles/Details/5

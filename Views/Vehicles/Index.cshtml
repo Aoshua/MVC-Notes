@@ -1,4 +1,4 @@
-﻿@model IEnumerable<VehicleMvcDemo.Models.Vehicle>
+﻿@model VehicleMvcDemo.Models.VehicleMakeViewModel
 
 @{
     ViewData["Title"] = "Vehicles List";
@@ -9,29 +9,40 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-controller="Vehicles" asp-action="Index" method="get">
+    <p>
+        <select asp-for="VehicleMake" asp-items="Model.Makes">
+            <option value="">All Makes</option>
+        </select>
+
+        Model: <input type="text" name="searchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.VehicleMake)
+                @Html.DisplayNameFor(model => model.Vehicles[0].VehicleMake)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.VehicleModel)
+                @Html.DisplayNameFor(model => model.Vehicles[0].VehicleModel)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.VehicleYear)
+                @Html.DisplayNameFor(model => model.Vehicles[0].VehicleYear)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.VehicleVin)
+                @Html.DisplayNameFor(model => model.Vehicles[0].VehicleVin)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.VehicleNote)
+                @Html.DisplayNameFor(model => model.Vehicles[0].VehicleNote)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Vehicles) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.VehicleMake)
