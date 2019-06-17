@@ -7,10 +7,23 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+/* Fonts
+---------------------------------------------------*/
+.ja-smaller{
+    font-size: 2em !important;
+}
+
+/* Images
+---------------------------------------------------*/
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 @media (min-width: 768px) {
   html {
