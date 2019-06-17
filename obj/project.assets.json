@@ -12118,11 +12118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Josh Abbott\\source\\repos\\VehicleMvcDemo\\VehicleMvcDemo.csproj",
+      "projectUniqueName": "C:\\Users\\Josh Abbott\\source\\repos\\Tutorials\\VehicleMvcDemo\\VehicleMvcDemo.csproj",
       "projectName": "VehicleMvcDemo",
-      "projectPath": "C:\\Users\\Josh Abbott\\source\\repos\\VehicleMvcDemo\\VehicleMvcDemo.csproj",
+      "projectPath": "C:\\Users\\Josh Abbott\\source\\repos\\Tutorials\\VehicleMvcDemo\\VehicleMvcDemo.csproj",
       "packagesPath": "C:\\Users\\Josh Abbott\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Josh Abbott\\source\\repos\\VehicleMvcDemo\\obj\\",
+      "outputPath": "C:\\Users\\Josh Abbott\\source\\repos\\Tutorials\\VehicleMvcDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
