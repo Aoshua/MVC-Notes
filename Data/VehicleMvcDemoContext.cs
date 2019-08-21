@@ -13,6 +13,6 @@ namespace VehicleMvcDemo.Models
         {
         }
 
-        public DbSet<VehicleMvcDemo.Models.Vehicle> Vehicle { get; set; }
+        public DbSet<Vehicle> Vehicle { get; set; }
     }
 }

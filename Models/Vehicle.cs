@@ -24,7 +24,7 @@ namespace VehicleMvcDemo.Models
         public string VehicleYear { get; set; }
 
         [Required]
-        [Display(Name = "Vehicle Identification Number (VIN)")]
+        [Display(Name = "VIN")]
         [RegularExpression(@"[a-zA-Z0-9]{9}[a-zA-Z0-9-]{2}[0-9]{6}")]
         public string VehicleVin { get; set; }
 
